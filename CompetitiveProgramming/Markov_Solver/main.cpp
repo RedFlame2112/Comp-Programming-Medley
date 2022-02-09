@@ -70,4 +70,9 @@ int main() {
     cout << "\nAs a fraction, this is:\n";
     as_fraction(res);
     return 0;
+    /* Output: 
+     * Probability of reaching: 1 within time 4 after starting from: 1 is: 0.259259
+     * As a fraction, this is:
+     * p: 0.259259     Fraction: 7/27
+     */
 }
