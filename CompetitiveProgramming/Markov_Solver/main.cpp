@@ -31,7 +31,7 @@ float get_probs(vector<float_vec > M, int States, int Final, int Source, int Tim
     return trans_mat[Final - 1][Source - 1];
 }
 void as_fraction(double number, int cycles = 10, double precision = 5e-4){
-    int sign  = number > 0 ? 1 : -1;
+    int sign  = (number > 0) ? 1 : -1;
     number = number * sign; //abs(number);
     double new_number,whole_part;
     double decimal_part =  number - (int)number;
