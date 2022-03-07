@@ -66,7 +66,7 @@ int main() {
     int States = 4;
     int S = 1, F = 1, T = 4;
     float res = get_probs(Trans, States, F, S, T);
-    cout << "Probability of reaching: " << F << " within time " << T << " after starting from: " << S << " is: " << res;
+    cout << "Probability of reaching node " << F << " within time " << T << " after starting from node " << S << " is: " << res;
     cout << "\nAs a fraction, this is:\n";
     as_fraction(res);
     return 0;
