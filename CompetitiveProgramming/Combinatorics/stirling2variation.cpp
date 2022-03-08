@@ -19,7 +19,7 @@ int main() {
             fact *= i;
         return fact;
     };
-    auto stirling_two_factorial = [=](int n, int k) -> ull {
+    auto stirling_two_ordered = [=](int n, int k) -> ull {
         ull fact = factorial(k);
         ull stirling = stirling_two(n, k);
         ull res = fact * stirling;
@@ -29,7 +29,7 @@ int main() {
     cout << "Enter 2 positive numbers" << endl;
     int n, r;
     cin >> n >> r;
-    ull ans = stirling_two_factorial(n, r) % mod;
+    ull ans = stirling_two_ordered(n, r) % mod;
     cout << ans << endl;
     return 0;
 }
